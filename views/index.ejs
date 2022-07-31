@@ -15,7 +15,7 @@
     <div class="document-container">
       <div class="document">
         <header>
-          <div class="logo">FH</div>
+          <div class="logo"><%= data.name.split(' ').map(word => word[0]).join(''); %></div>
           <h1 class="name"><%= data.name %></h1>
           <div class="role"><%= data.role %></div>
           <p class="links">
