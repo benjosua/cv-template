@@ -49,36 +49,36 @@ npm start
 
 ```json
 {
-  "name": string,
-  "website": string,
-  "email": string,
+  "name": "string",
+  "website": "string",
+  "email": "string",
   "phone": number,
-  "role": string,
-  "location": string,
-  "github": string,
-  "introduction": string,
+  "role": "string",
+  "location": "string",
+  "github": "string",
+  "introduction": "string",
   "experience": [
     {
-      "name": string,
-      "role": string,
-      "location": string,
+      "name": "string",
+      "role": "string",
+      "location": "string",
       "list": [
-        string
+        "string"
       ]
     }
   ],
   "projects": [
     {
-      "name": string,
-      "link": string,
+      "name": "string",
+      "link": "string",
       "list": [
-        string
+        "string"
       ]
     }
   ],
   "education": {
-    "degree": string,
-    "location": string
+    "degree": "string",
+    "location": "string"
   }
 }
 
