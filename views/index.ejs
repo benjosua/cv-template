@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV</title>
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+    </style>
+  </head>
+
+  <body>
+    <div class="document-container">
+      <div class="document">
+        <header>
+          <div class="logo">FH</div>
+          <h1 class="name"><%= data.name %></h1>
+          <div class="role"><%= data.role %></div>
+          <p class="links">
+            <%= `${data.location} | ${data.github} |
+            ${data.email} | ${data.phone}` %>
+          </p>
+          <p class="links">
+            <%= data.introduction %></p>
+          </p>
+        </header>
+
+        <!-- BEGIN Work Experice -->
+          <section>
+            <h2>Work Experice</h2>
+            <!-- experience sections loop -->
+            <% data.experience.forEach(item => { %>
+            <div class="sub-section">
+              <h2><%= item.name %> </h2>
+              <div class="list-container">
+                <div class="sub-section-role">
+                  <%= `${item.role} | ${item.role} | ${item.location}` %>
+                </div>
+                <ul class="description">
+                  <!-- experience section, list loop -->
+                  <% item.list.forEach(entry => { %>
+                  <li>
+                    <%= entry %>
+                  </li>
+                  <% }); %>
+                  <!-- END experience section, list loop-->
+                </ul>
+              </div>
+            </div>
+            <% }); %>
+            <!-- END experience sections loop -->
+          </section>
+          <!-- END Work Experice -->
+
+          <!-- BEGIN Projects -->
+          <section>
+            <h2>Projects</h2>  
+            <div class="sub-section">
+              <h2>
+                <!-- project name -->
+              </h2>
+              <div class="list-container">
+                <div class="sub-section-role">
+                  <!-- github link -->
+                </div>
+                <ul class="description">
+                  <li>
+                    <!-- project description -->
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <!-- END Projects -->       
+      </div>
+    </div>
+  </body>
+</html>
