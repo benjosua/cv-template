@@ -52,7 +52,7 @@ npm start
   "name": "string",
   "website": "string",
   "email": "string",
-  "phone": number,
+  "phone": 123,
   "role": "string",
   "location": "string",
   "github": "string",
