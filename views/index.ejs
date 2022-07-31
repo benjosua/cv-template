@@ -56,24 +56,42 @@
 
           <!-- BEGIN Projects -->
           <section>
-            <h2>Projects</h2>  
+            <h2>Projects</h2>
+            <% data.projects.forEach(project => { %>
             <div class="sub-section">
               <h2>
-                <!-- project name -->
+                <%= project.name %>
               </h2>
               <div class="list-container">
                 <div class="sub-section-role">
-                  <!-- github link -->
+                  <%= project.link %> 
                 </div>
                 <ul class="description">
+                  <!-- project section, list loop -->
+                  <% project.list.forEach(entry => { %>
                   <li>
-                    <!-- project description -->
+                    <%= entry %>
                   </li>
+                  <% }); %>
+                  <!-- END project section, list loop-->
                 </ul>
               </div>
             </div>
+            <% }); %>
           </section>
-          <!-- END Projects -->       
+          <!-- END Projects -->
+          
+          <section>
+            <h2>Education</h2>
+            <div class="sub-section">
+              <h2>
+                <%= data.education.degree %>
+              </h2>
+                <div class="sub-section-role">
+                  <%= data.education.location %> 
+                </div>
+            </div>
+          </section>
       </div>
     </div>
   </body>
