@@ -9,12 +9,12 @@ This is a node.js application powered by EJS to deliver dynamically generated re
 ## Features
 
 - Enter resume data into resume.json file
-- Provide dynmaic resume with specified data
+- Provide dynamic resume with specified data
 
 ## Planned features
 
 - CMS for JSON file
-- possibility to export as PDF
+- Possibility to export as PDF
 
 </br>
 
